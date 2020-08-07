@@ -1,5 +1,5 @@
 # denodocker
- dockerize your deno, base on hayd repo
+ dockerize your deno, base on hayd image
  <br>
 ```docker-compose build```
  <br>
