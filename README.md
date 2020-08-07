@@ -5,4 +5,4 @@
  <br>
 ```docker-compose up -d```
  <br>
-```docker-compose run --service-ports denodocker```
+```docker-compose run --service-ports deno```
