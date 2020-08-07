@@ -1,0 +1,19 @@
+version: '3'
+networks:
+  mongo_db_networks:
+    external: true
+services:
+  deno:
+    build:
+      context: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ~/Project:/Project
+      - ~/.ssh:/root/.ssh
+    environment:
+      - PGHOST=postgresql
+      - PGUSER=postgres
+    networks:
+      - mongo_db_networks
+
